@@ -44,9 +44,22 @@ class Test_Model_Attrs(unittest.TestCase):
     m = Model('FAKE_MODEL_DIR/TestModel.ain2')
     self.assertEqual(m.name, 'TestModel', 'This should be the model name without an extension')    
   
+  def test_model_file(self):
+    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
+    self.assertEqual(m.filename, 'TestModel.ain2', 'This should be the model name with an extension')    
+  
   def test_model_dir(self):
     m = Model('FAKE_MODEL_DIR/TestModel.ain2')
     self.assertEqual(m.dir, 'FAKE_MODEL_DIR', 'This should be the path to the model')
+  
+  def test_model_locked(self):
+    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
+    # Create a lock file, which occurs when a model is open in ALFA
+    open(os.path.join(m.dir, 'TestModel.ain2.lock'), 'a').close()
+    self.assertTrue(m.locked)
+    os.remove(os.path.join(m.dir, 'TestModel.ain2.lock'))
+
+    self.assertFalse(m.locked)  
 
   def test_table_files(self):
     pass    

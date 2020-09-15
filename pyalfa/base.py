@@ -1,4 +1,4 @@
-import sys, os, glob
+import sys, os
 
 class Model:
   '''General class for an MG-ALFA model
@@ -7,7 +7,6 @@ class Model:
     valdate (str): date-like object representing the Valuation Date of the model
     asset_input: instance of :class: AIA
     liability_input: instance of :class: AIL
-    name (str): Optional nickname for the model
   
   Examples:
     Create an instance of a model::
@@ -42,6 +41,12 @@ class Model:
 
   def _get_modelDir(self):
     return os.path.split(self.__model_file)[0]
+  
+  def _isLocked(self):
+    return os.path.exists(os.path.join(self.dir, '%s'%(self.filename + '.lock')))
+  
+  def _get_modelFile(self):
+    return os.path.split(self.__model_file)[1]
 
   @property
   def output(self):
@@ -70,8 +75,21 @@ class Model:
   
   @property
   def name(self):
-    '''Name of the model'''
+    '''Name of the model, without the \*.ain2 extension'''
     return self._get_modelName()
+  
+  @ property
+  def filename(self):
+    '''Name of the model file, with the \*.ain2 extension'''
+    return self._get_modelFile()
+  
+  @property
+  def locked(self):
+    '''
+    Returns:
+      True if someone is using the model in ALFA, otherwise False
+    '''
+    return self._isLocked()
 
 class AIA:
   '''Instance of ALFA Input Asset. These are basically just text files
@@ -110,7 +128,7 @@ class AIL:
   pass
 
 class Output:
-  '''Output from ALFA an ALFA run
+  '''Output from an ALFA run
   
   '''
   def __init__(self, **kwargs):
