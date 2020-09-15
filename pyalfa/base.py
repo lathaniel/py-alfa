@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, json, glob
 
 class Model:
   '''General class for an MG-ALFA model
@@ -16,10 +16,26 @@ class Model:
 
   '''
   def __init__(self, full_path_to_model_file, valdate = None):
-    # TODO: Look for *.ain2 as the actual model
-    # ensure the model exists
+    # ensure the provided path exists
     if os.path.exists(full_path_to_model_file):
-      self.__model_file = full_path_to_model_file
+      # See if a file or directory was provided.
+      if full_path_to_model_file.split('.')==[full_path_to_model_file]:
+        # User provided a directory, so look for an ALFA model within
+        files = glob.glob(os.path.join(full_path_to_model_file, '*.ain2'))
+        if len(files)==1:
+          self.__model_file = files[0]
+        elif len(files)==0:
+          raise FileNotFoundError("Could not find an AFLA model (*.ain2) within '%s'"%full_path_to_model_file)
+          self.__model_file = ''
+        else:
+          # More than one model exists in the provided directory
+          raise ValueError("More than one ALFA model exists within '%s'. Please specify which to use by providing its full filename when creating a Model instance.")
+          self.__model_file = ''
+      else:
+        # User provided a file. See if it is an ALFA model
+        if not full_path_to_model_file.split('.')[-1].lower()=='ain2':
+          raise ValueError("'%s' does not appear to be an ALFA model. Proceed with caution and double check what you have entered."%full_path_to_model_file)
+        self.__model_file = full_path_to_model_file
     else:
       print("Could not initialize model at '%s'\nMake sure you entered the path correctly and that it can be accessed by you."%full_path_to_model_file)
       raise FileNotFoundError("Could not initialize model at '%s'\nMake sure you entered the path correctly and that it can be accessed by you."%full_path_to_model_file)
@@ -27,9 +43,9 @@ class Model:
     # Give the model a valuation date, even though it won't really be useful in practice
   
   def _get_tableFiles(self):
-    '''return a list of tables files used by the model'''
+    '''Return a list of tables files used by the model'''
     l = []
-    for filename in os.listdir(self.__model_file):
+    for filename in os.listdir(self.dir):
       if filename.split('.')[-1].lower()=='atb2x':
         l.append(filename)
     
@@ -66,7 +82,7 @@ class Model:
   
   @property
   def tables(self):
-    '''Get list of table files present for the model
+    '''Get list of ALFA Table Files present for the model
 
     Returns:
       List of filenames as strings
@@ -95,13 +111,37 @@ class AIA:
   '''Instance of ALFA Input Asset. These are basically just text files
 
   Attributes:
-    name (str): name of the asset input, e.g. Bond
-    fields (list): list of fields used by the AIA file
     data: Underlying data for the AIA (all available segments)
     output_dest (str): Where to save the \*.aia2 files upon building
   '''
-  def __init__(self, name):
+  def __init__(self, name, mod = None):
     self.name = name
+    self.model = mod # Underlying model for which these AIAs are used
+    if mod:
+      if isinstance(mod, Model):
+        # User provided a Model instance
+        self.output_dest = mod.dir
+        # TODO: Let the following be dynamic
+        self.defs_file = os.path.join(mod.dir, 'AIA_Definitions.JSON')
+      else:
+        raise ValueError("mod parameter provided, but is not a Model instance.")
+  
+  def _get_fields(self):
+    # Read in the JSON definitions file
+    with open(self.defs_file, 'r') as f:
+      j = json.load(f)
+    
+    # Use self.name to get the aia definitions
+    return list(j[self.name].keys())
+  
+  @ property
+  def fields(self):
+    '''
+    Returns:
+      List of fields used by the AIA, per the definitions file
+
+    '''
+    return self._get_fields()
   
   def build(self, segs='all'):
     '''Build the AIAs using the data attribute
