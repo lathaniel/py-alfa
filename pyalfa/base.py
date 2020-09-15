@@ -30,6 +30,15 @@ class Model:
         l.append(filename)
     
     return l
+  
+  @property
+  def output(self):
+    '''List of available output from model
+
+    Returns:
+      Dataframe of outputs
+    '''
+    pass
 
   @property
   def dir(self):
@@ -82,3 +91,10 @@ class AIA:
 
 class AIL:
   pass
+
+class Output:
+  '''Output from ALFA an ALFA run
+  
+  '''
+  def __init__(self, **kwargs):
+    pass
