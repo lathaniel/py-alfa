@@ -13,7 +13,6 @@ py-alfa module documentation
 .. automodule:: pyalfa.base
    :members:
 
-
 Indices and tables
 ==================
 
