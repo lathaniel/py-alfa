@@ -22,6 +22,11 @@ def create_dummy_model_folder(model_dir):
   open(os.path.join(model_dir, 'AssetInput02.aia2'), 'a').close()
   open(os.path.join(model_dir, 'LiabInput01.ail2'), 'a').close()
   open(os.path.join(model_dir, 'LiabInput02.ail2'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.001.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.110.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.02.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.12.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.054.Metadata.xml'), 'a').close()
 
   # Create AIA definitions in model directory
   with open(os.path.join(model_dir, 'AIA_Definitions.JSON'), 'w') as f:
@@ -456,40 +461,45 @@ class Test_Model_Init(unittest.TestCase):
     pass    
 
 class Test_Model_Attrs(unittest.TestCase):
+
+  def __init__(self, *args, **kwargs):
+    super(Test_Model_Attrs, self).__init__(*args, **kwargs)
+    self.m = Model('FAKE_MODEL_DIR/TestModel.ain2')
   
   def test_model_name(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(m.name, 'TestModel', 'This should be the model name without an extension')    
+    result = self.m.name    
+    self.assertEqual(result, 'TestModel', 'This should be the model name without an extension')    
   
   def test_model_file(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(m.filename, 'TestModel.ain2', 'This should be the model name with an extension')    
+    result = self.m.filename
+    self.assertEqual(result, 'TestModel.ain2', 'This should be the model name with an extension')    
   
   def test_model_dir(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(m.dir, 'FAKE_MODEL_DIR', 'This should be the path to the model')
+    result = self.m.dir
+    self.assertEqual(result, 'FAKE_MODEL_DIR', 'This should be the path to the model')
   
   def test_model_locked(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
     # Create a lock file, which occurs when a model is open in ALFA
-    open(os.path.join(m.dir, 'TestModel.ain2.lock'), 'a').close()
-    self.assertTrue(m.locked)
+    open(os.path.join(self.m.dir, 'TestModel.ain2.lock'), 'a').close()
+    self.assertTrue(self.m.locked)
 
-    os.remove(os.path.join(m.dir, 'TestModel.ain2.lock'))
-    self.assertFalse(m.locked)  
+    os.remove(os.path.join(self.m.dir, 'TestModel.ain2.lock'))
+    self.assertFalse(self.m.locked)  
 
   def test_table_files_fine(self):
-    result = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(result.tables, ['TableFile01.xlsx.atB2X'])
+    result = self.m.tables
+    self.assertEqual(result, ['TableFile01.xlsx.atB2X'])
   
   def test_table_files_empty(self):
-    result = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    os.remove(os.path.join(result.dir, 'TableFile01.xlsx.atB2X'))
-    self.assertEqual(result.tables, [])
-    open(os.path.join(result.dir, 'TableFile01.xlsx.atB2X'), 'a').close()
+    os.remove(os.path.join(self.m.dir, 'TableFile01.xlsx.atB2X'))
+    result = self.m.tables
+    self.assertEqual(result, [])
+    open(os.path.join(self.m.dir, 'TableFile01.xlsx.atB2X'), 'a').close()
 
-  def test_model_output(self):
-    pass
+  def test_model_runs(self):
+    result = self.m.runs
+    result.sort()
+    self.assertEqual(result, ['001', '02', '054','110','12'])
 
 class Test_AIA_init(unittest.TestCase):
   def test_AIA_fine(self):
