@@ -1,4 +1,6 @@
 import sys, os, json, glob, re
+import xml.etree.ElementTree as ET
+import pandas as pd
 
 class Model:
   '''General class for an MG-ALFA model
@@ -11,8 +13,11 @@ class Model:
   Examples:
     Create an instance of a model::
 
-      x = Model('P:/2020/083120')
-      # Output
+      import pyalfa as mg
+      m = mg.Model('P:/2020/083120/Assets_083120.ain2')
+      
+      # See what runs are available for the model
+      m.runs
 
   '''
   def __init__(self, full_path_to_model_file, valdate = None):
@@ -25,11 +30,11 @@ class Model:
         if len(files)==1:
           self.__model_file = files[0]
         elif len(files)==0:
-          raise FileNotFoundError("Could not find an AFLA model (*.ain2) within '%s'"%full_path_to_model_file)
+          raise FileNotFoundError("Could not find an ALFA model (*.ain2) within '%s'"%full_path_to_model_file)
           self.__model_file = ''
         else:
           # More than one model exists in the provided directory
-          raise ValueError("More than one ALFA model exists within '%s'. Please specify which to use by providing its full filename when creating a Model instance.")
+          raise ValueError("More than one ALFA model exists within '%s'. Please specify which to use by providing its full filename when creating a Model instance."%(full_path_to_model_file))
           self.__model_file = ''
       else:
         # User provided a file. See if it is an ALFA model
@@ -37,7 +42,6 @@ class Model:
           raise ValueError("'%s' does not appear to be an ALFA model. Proceed with caution and double check what you have entered."%full_path_to_model_file)
         self.__model_file = full_path_to_model_file
     else:
-      print("Could not initialize model at '%s'\nMake sure you entered the path correctly and that it can be accessed by you."%full_path_to_model_file)
       raise FileNotFoundError("Could not initialize model at '%s'\nMake sure you entered the path correctly and that it can be accessed by you."%full_path_to_model_file)
     
     # Give the model a valuation date, even though it won't really be useful in practice
@@ -66,8 +70,41 @@ class Model:
   
   def _get_runs(self):
     # return list of runs in the model directory (for the model)
-    files = glob.glob(os.path.join(self.dir, '%s.Run.*'% self.name))
+    files = glob.glob(os.path.join(self.dir, '%s.Run.*.Meta*'% self.name))
     return [re.search('Run\.(\d+)\.', f)[1] for f in files]
+  
+  def run(self, r):
+    '''Get specific information for a run, as a run instance
+    Args:
+      r: Run ID can be a list of ids or a single id
+
+    Returns:
+      Instance of class Run
+    '''
+    # Ensure that r is a valid run
+    # TODO: Provide some str-int leniency here
+    if r not in self.runs:
+      raise ValueError('%s does not appear to be an available run. Check that its output is in "%s"'%(r, self.dir))
+      return # Do we even need this
+    
+    # Read in the XML output from the run
+    if os.path.exists(os.path.join(self.dir, '%s.Run.%s.Metadata.xml' %(self.name, r))):
+      d = dict()
+      tree = ET.parse(os.path.join(self.dir, '%s.Run.%s.Metadata.xml' %(self.name, r)))
+      root = tree.getroot()
+      for child in root:
+        if len(child.attrib)==1:
+          # Easiest case
+          d[child.attrib['Type']] = child.text
+        else:
+          if not child.attrib['Type'] in d.keys():
+            # First encounter of attribute
+            d[child.attrib['Type']] = dict()
+          
+          d[child.attrib['Type']][child.attrib['Key']] = child.text
+    
+    # Create instance of Run class using XML data
+    return Run(**(self.__dict__), **d)  
 
   @property
   def runs(self):
@@ -167,20 +204,55 @@ class AIA:
 class AIL:
   pass
 
-class Run:
+class Run(Model): # We want to pass some model methods
   '''An ALFA run
   
   Attributes:
     output
     id
-    **kwargs (from metatada XML)  
+    **kwargs (from metadata XML)  
+  
+  TODO:
+    Add '_' prefix to *kwargs, maybe...
+      OR: have an attribute called 'meta' that contains all that info. Yeah I like that better...
   '''
 
-  def __init__(self, **kwargs):
+  def __init__(self, output=False, **kwargs):
+    # TODO: ensure that name and dir are passed by the model
     self.__dict__.update(kwargs)
 
     self.__id = self.ProjectionId.split('.')[-1]
-    self.__output = None
+    # Calling getOutput() takes a long time for asset projections, so pass a parameter specifying whether to do it
+    if output:
+      self.__output = self._getOutput()
+    else:
+      self.__output = None
+
+  def _getOutput(self):
+    # TODO: What happens when there are both TT and STT??
+      # ? Perhaps a dictionary of dataframe values with template as key?
+    # ! Use glob() here to get number of output files for Run
+    # Use run info to read in the output file
+    if os.path.exists(os.path.join(self.dir, '%s.Proj.%s.Run.%s.Rreq.006.Subtotal001.txt'%(self.name,self.id,self.id))):
+      return pd.read_csv(
+        os.path.join(self.dir, '%s.Proj.%s.Run.%s.Rreq.006.Subtotal001.txt'%(self.name,self.id,self.id))
+        , sep = '\t'
+      )
+    elif os.path.exists(os.path.join(self.dir, '%s.Proj.%s.Run.%s.Rreq.010.Total002.txt'%(self.name,self.id,self.id))):
+      return pd.read_csv(
+        os.path.join(self.dir, '%s.Proj.%s.Run.%s.Rreq.010.Total002.txt'%(self.name,self.id,self.id))
+        , sep = '\t'
+      )
+    else:
+      raise FileNotFoundError("Could not find output for %s.Proj.%s in '%s' ... Its possible that I am not yet equipped to read in the output your looking for."%(self.name, self.id, self.dir))
+
+  def _getLogs(self):
+    '''Get debug and grid logs'''
+    logs = glob.glob(os.path.join(self.dir, '%s.Run.%s.*.log'% (self.name, self.id)))
+    keys = [re.search('run\.\d+\.(.+)\.log', x.lower())[1] for x in logs] if logs else []
+    
+    # Return a dict with logName and fileName?
+    return dict(zip(keys, logs))
 
   @property
   def id(self):
@@ -190,3 +262,16 @@ class Run:
   def output(self):
     '''View output from the run in tabular form'''
     return self.__output
+  
+  @property
+  def description(self):
+    return self.ProjectionDescription
+  
+  @property
+  def valdate(self):
+    return self.ValuationDate
+  
+  @property
+  def logs(self):
+    return self._getLogs()
+    

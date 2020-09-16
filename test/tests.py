@@ -431,35 +431,35 @@ def clear_dummy_model_folder(model_dir):
 class Test_Model_Init(unittest.TestCase):
   
   def test_init_NotAModel(self):
-    with self.assertRaises(ValueError):
-      result = Model('FAKE_MODEL_DIR/AssetInput01.aia2')
+      with self.assertRaises(ValueError):
+         result = Model('FAKE_MODEL_DIR/AssetInput01.aia2')
   
   def test_init_ProvidedFolderWithModel(self):
-    result = result = Model('FAKE_MODEL_DIR')
-    self.assertIsInstance(result, Model)
+      result = result = Model('FAKE_MODEL_DIR')
+      self.assertIsInstance(result, Model)
   
   def test_init_ProvidedFolderWithoutModel(self):
-    with self.assertRaises(FileNotFoundError):
-      result = Model('FAKE_MODEL_DIR/TheresNoModelHere')
+      with self.assertRaises(FileNotFoundError):
+         result = Model('FAKE_MODEL_DIR/TheresNoModelHere')
   
   def test_init_ProvidedFolderWithMultipleModels(self):
-    with self.assertRaises(ValueError):
-      result = Model('FAKE_MODEL_DIR/ThereAreTwoModelsHere')
+      with self.assertRaises(ValueError):
+         result = Model('FAKE_MODEL_DIR/ThereAreTwoModelsHere')
 
   def test_init_fine(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertIsInstance(m, Model)
+      m = Model('FAKE_MODEL_DIR/TestModel.ain2')
+      self.assertIsInstance(m, Model)
 
   def test_init_path_not_exists(self):    
-    with self.assertRaises(FileNotFoundError):
-      result = Model('NOTADIRECTORY')
+      with self.assertRaises(FileNotFoundError):
+         result = Model('NOTADIRECTORY')
 
   def test_init_no_model_in_path(self):
-    pass
+      pass
 
   def test_init_mult_model_in_path(self):
-    pass    
-
+      pass    
+    
 class Test_Model_Attrs(unittest.TestCase):
 
   def __init__(self, *args, **kwargs):
@@ -528,8 +528,33 @@ class Test_AIA_attrs(unittest.TestCase):
 class Test_AIL_init(unittest.TestCase):
   pass
 
-class Test_Output_init(unittest.TestCase):
-  pass
+class Test_Run_init(unittest.TestCase):
+  
+   def __init__(self, *args, **kwargs):
+      super(Test_Run_init, self).__init__(*args, **kwargs)
+      self.m = Model('FAKE_MODEL_DIR/TestModel.ain2')
+   
+   def test_run_fine(self):
+      pass
+
+   def test_run_no_output(self):
+      pass
+
+   def test_run_invalid(self):
+      pass
+
+   def test_run_with_output(self):
+      pass
+
+   def test_run_projID_not_in_kwargs(self):
+      pass
+
+   def test_run_name_not_in_kwargs(self):
+      pass
+
+   def test_run_dir_not_in_kwargs(self):
+      pass
+
 
 if __name__=="__main__":
   create_dummy_model_folder(model_dir='FAKE_MODEL_DIR')
