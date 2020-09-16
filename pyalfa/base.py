@@ -1,4 +1,4 @@
-import sys, os, json, glob
+import sys, os, json, glob, re
 
 class Model:
   '''General class for an MG-ALFA model
@@ -63,15 +63,15 @@ class Model:
   
   def _get_modelFile(self):
     return os.path.split(self.__model_file)[1]
+  
+  def _get_runs(self):
+    # return list of runs in the model directory (for the model)
+    files = glob.glob(os.path.join(self.dir, '%s.Run.*'% self.name))
+    return [re.search('Run\.(\d+)\.', f)[1] for f in files]
 
   @property
-  def output(self):
-    '''List of available output from model
-
-    Returns:
-      Dataframe of outputs
-    '''
-    pass
+  def runs(self):
+    return self._get_runs()
 
   @property
   def dir(self):
@@ -167,9 +167,26 @@ class AIA:
 class AIL:
   pass
 
-class Output:
-  '''Output from an ALFA run
+class Run:
+  '''An ALFA run
   
+  Attributes:
+    output
+    id
+    **kwargs (from metatada XML)  
   '''
+
   def __init__(self, **kwargs):
-    pass
+    self.__dict__.update(kwargs)
+
+    self.__id = self.ProjectionId.split('.')[-1]
+    self.__output = None
+
+  @property
+  def id(self):
+    return self.__id
+  
+  @property
+  def output(self):
+    '''View output from the run in tabular form'''
+    return self.__output
