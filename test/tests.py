@@ -506,14 +506,35 @@ class Test_AIA_init(unittest.TestCase):
     self.assertIsInstance(result.model, Model)
 
 class Test_AIA_attrs(unittest.TestCase):
-  '''
-  TODO:
-    - No AIA defs file in directory
-    - AIA name not in defs file
-  '''
-  def test_aia_fields(self):
-    result = AIA('Bond', Model('FAKE_MODEL_DIR/TestModel.ain2'))
-    self.assertIsInstance(result.fields, list)
+   '''
+   TODO:
+      - No AIA defs file in directory
+      - AIA name not in defs file
+   '''
+   def test_aia_fields(self):
+      result = AIA('Bond', Model('FAKE_MODEL_DIR/TestModel.ain2'))
+      self.assertIsInstance(result.fields, list)
+
+   def test_build_segs_param(self):
+      # str provided
+      # int provided
+      # bad type(s) provided
+      # list of str
+      # list of int
+      # list of bad type(s)
+      pass
+
+   def test_build_without_data(self):
+      pass
+
+   def test_build_good(self):
+      pass
+
+   def test_build_empty_data(self):
+      pass
+
+   def test_build_without_definitions_file(self):
+      pass
 
 class Test_AIL_init(unittest.TestCase):
   pass

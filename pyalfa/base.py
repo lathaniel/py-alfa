@@ -115,12 +115,13 @@ class AIA:
     output_dest (str): Where to save the \*.aia2 files upon building
   '''
   def __init__(self, name, mod = None):
-    self.name = name
-    self.model = mod # Underlying model for which these AIAs are used
+    self.__name = name
+    self.__model = mod # Underlying model for which these AIAs are used
+    self.__outfile_name = '%s_%s.aia2' %('SEGNUMBER', self.__name)
     if mod:
       if isinstance(mod, Model):
         # User provided a Model instance
-        self.output_dest = mod.dir
+        self.__outputDest = mod.dir
         # TODO: Let the following be dynamic
         self.defs_file = os.path.join(mod.dir, 'AIA_Definitions.JSON')
       else:
@@ -133,6 +134,39 @@ class AIA:
     
     # Use self.name to get the aia definitions
     return list(j[self.name].keys())
+
+  @property
+  def output_dest(self):
+    return self.__outputDest
+  
+  @output_dest.setter
+  def output_dest(self, val):
+    # Ensure that val is a valid location
+    if os.path.exists(val):
+      self.__outputDest = val
+    else: 
+      raise NotADirectoryError('Must provide a directory for output_dest')
+  
+  @property
+  def outfile_name(self):
+    '''Tells user how the AIA output file will be named'''
+    return self.__outfile_name
+  
+  @outfile_name.setter
+  def outfile_name(self, val):
+    '''This will be the name of the resulting AIA outfile'''
+    if isinstance(val, str):
+      self.__outfile_name = val
+    else:
+      raise ValueError('Must provide a string value!')
+
+  @ property
+  def model(self):
+    return self.__model
+
+  @property
+  def name(self):
+    return self.__name
   
   @ property
   def fields(self):
@@ -149,20 +183,37 @@ class AIA:
     Args:
       seg (optional list): Default is 'all'. Use to specify which segments to build. Each segment has its own file for output.
     
+    TODO:
+      Provide str-int flexibility (and zeropadness)
+      Use AIA Definitions file 
     '''
-    if segs.lower()=='all':
-      df = self.__data
-      for seg in df['segment'].unique():
-        
-        outfile = '%s_%s.aia2'%(seg, self.__name)
-        segment_subset = df.loc[df.segment==seg]
-
-        # Output the AIA data to text file
-        segment_subset.to_csv(outfile, sep = '\t', index = False, header=False)
+    # Handle provided segments
+    if isinstance(segs, str):
+      segs = [segs] if segs.lower() != 'all' else list(self.__data['segment'].unique())
+      
+    elif not isinstance(segs, list):
+      raise ValueError('Segments should be a str or a list of strings.')
     
+    # Get the data we want
+    df = self.__data
+    
+    ## Filter Data to desired segments
+    subset = df.loc[df['segment'].isin(segs)]
+
+    # Determine if we should aggregate the data
+    if 'SEGNUMBER_' in self.outfile_name:
+      # Create separate files for each segment
+      # Loop through segments
+      for seg in segs:
+        outfile = self.outfile_name.replace('SEGNUMBER', seg)
+        sub = subset.loc[subset['segment']==seg]
+        sub.to_csv(outfile, sep = '\t', index = False, header=False)     
     else:
-      # Ensure a list of segments was passed
-      pass
+      # Put everything into the same file for the provided segments
+      outfile = self.outfile_name
+      # Output the AIA data to text file
+      subset.to_csv(outfile, sep = '\t', index = False, header=False)      
+    
 
 class AIL:
   pass
