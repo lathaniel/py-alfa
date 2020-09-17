@@ -79,7 +79,7 @@ class Model:
       r: Run ID can be a list of ids or a single id
 
     Returns:
-      Instance of class Run
+      Instance of Run class
     '''
     # Ensure that r is a valid run
     # TODO: Provide some str-int leniency here
@@ -104,7 +104,7 @@ class Model:
           d[child.attrib['Type']][child.attrib['Key']] = child.text
     
     # Create instance of Run class using XML data
-    return Run(**(self.__dict__), **d)  
+    return Run(metadata=d, **(self.__dict__))  
 
   @property
   def runs(self):
@@ -147,6 +147,22 @@ class Model:
         raise
     else:
       raise ValueError('Must provide a string.')
+  
+  @property
+  def nickname(self):
+    '''A nickname/alias for the model
+    
+    Could be useful for later use in any report creation
+    
+    '''
+    return self.__alias if '_Model__alias' in self.__dict__.keys() else ''
+  
+  @nickname.setter
+  def nickname(self, val):
+    if isinstance(val, str):
+      self.__alias = val
+    else:
+      raise ValueError('Must provide a string.')
 
   @ property
   def filename(self):
@@ -170,8 +186,11 @@ class Asset:
   '''
   def __init__(self, name, mod = None):
     self.__name = name
+    self.__excluded = []
     self.__model = mod # Underlying model for which these AIAs are used
     self.__outfile_name = '%s_%s.aia2' %('SEGNUMBER', self.__name)
+    self.__outputDest = None
+    
     if mod:
       if isinstance(mod, Model):
         # User provided a Model instance
@@ -188,6 +207,21 @@ class Asset:
     
     # Use self.name to get the aia definitions
     return list(j[self.name].keys())
+  
+  def exclude(self, v):
+    '''Method to exclude specific assets from the model
+
+    Returns:
+      None
+    '''
+    # See what was provided
+    if isinstance(v, (str, int)):
+      v = [v]
+    elif not isinstance(v,(list,tuple)):
+      raise ValueError ('Cannot provide an argument of type %s'%type(v))
+    
+    # Add provided value(s) to excluded assets
+    self.__excluded.extend(v)
 
   @property
   def output_dest(self):
@@ -222,6 +256,19 @@ class Asset:
   def name(self):
     return self.__name
   
+  @property
+  def excluded(self):
+    '''Which assets should be excluded from the model
+    
+    Returns:
+      A list of asset identifiers
+    '''
+    return self.__excluded
+  
+  @excluded.setter
+  def excluded(self, v):
+    pass
+  
   @ property
   def fields(self):
     '''
@@ -240,6 +287,7 @@ class Asset:
     TODO:
       Provide str-int flexibility (and zeropadness)
       Use AIA Definitions file 
+      Exclude excluded Assets
     '''
     # Handle provided segments
     if isinstance(segs, str):
@@ -276,16 +324,19 @@ class Run(Model): # We want to pass some model methods
   '''An ALFA run
   
   Attributes:
-    **kwargs (from metadata XML)  
+    metadata
   
   TODO:
     Add '_' prefix to \*kwargs, maybe...
       OR: have an attribute called 'meta' that contains all that info. Yeah I like that better...
   '''
 
-  def __init__(self, output=False, **kwargs):
+  def __init__(self, metadata = {}, output=False, **kwargs):
     # TODO: ensure that name and dir are passed by the model
+    
+    # These should  be passed attributes from the Model instance
     self.__dict__.update(kwargs)
+    self.__metadata = metadata
 
     self.__id = self.ProjectionId.split('.')[-1]
     # Calling getOutput() takes a long time for asset projections, so pass a parameter specifying whether to do it
@@ -312,6 +363,17 @@ class Run(Model): # We want to pass some model methods
     else:
       raise FileNotFoundError("Could not find output for %s.Proj.%s in '%s' ... Its possible that I am not yet equipped to read in the output your looking for."%(self.name, self.id, self.dir))
 
+  def _get_metadata(self, k):
+    '''Gets the specified item from the metadata dictionary
+    
+    Returns:
+      item from metadata dictionary 
+    '''
+    if k in self.__metadata.keys():
+      return self.__metadata[k]
+    else:
+      raise IndexError('"%s" not in metadata'%k)
+
   def _getLogs(self):
     '''Get debug and grid logs'''
     logs = glob.glob(os.path.join(self.dir, '%s.Run.%s.*.log'% (self.name, self.id)))
@@ -320,22 +382,31 @@ class Run(Model): # We want to pass some model methods
     # Return a dict with logName and fileName?
     return dict(zip(keys, logs))
 
+  @ property
+  def metadata(self):
+    '''Dictionary of metadata from XML file'''
+    return self.__metadata
+
   @property
   def id(self):
-    return self.__id
+    '''The projection id, obtained from the metadata'''
+    return self._get_metadata('ProjectionId')
   
   @property
   def output(self):
-    '''View output from the run in tabular form'''
+    '''View output from the run in tabular form
+    TODO: When it's currently none, set the attribute so file isn't read multiple times
+
+    '''    
     return self.__output
   
   @property
   def description(self):
-    return self.ProjectionDescription
+    return self._get_metadata('ProjectionDescription')
   
   @property
   def valdate(self):
-    return self.ValuationDate
+    return self._get_metadata('ValuationDate')
   
   @property
   def logs(self):
