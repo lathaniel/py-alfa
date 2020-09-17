@@ -1,0 +1,7263 @@
+{
+   "Bond": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParRate": {
+         "Value": "[ParRate]",
+         "Index": 20,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "TaxableIntPct": {
+         "Value": "[TaxableIntPct]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 24,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallPremPer": {
+         "Value": "[FirstCallPremPer]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[ParCallDate]",
+         "Index": 26,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 37,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PreRefundFlg": {
+         "Value": "[PreRefund_Flag]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "AltBond": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 20,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "TaxableIntPct": {
+         "Value": "[TaxableIntPct]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 23,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallPremPer": {
+         "Value": "[FirstCallPremPer]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[ParCallDate]",
+         "Index": 25,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 36,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PreRefundFlg": {
+         "Value": "[PreRefund_Flag]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AltType": {
+         "Value": "[AltType]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "LoanAsset": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LoanOrigTerm": {
+         "Value": "[LoanOrigTerm]",
+         "Index": 20,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "TaxableIntPer": {
+         "Value": "[TaxableIntPct]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LoanCoupon": {
+         "Value": "[ParRate]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LoanResetMat": {
+         "Value": "[LoanResetMat]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LoanResetTerm": {
+         "Value": "[LoanResetTerm]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IndexMultiplier": {
+         "Value": "[IndexMultiplier]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "UpperBound": {
+         "Value": "[AdjCap]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjFloor": {
+         "Value": "[AdjFloor]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LoanSpread": {
+         "Value": "[a_spd_rec_rt]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "OptionYCPoint1": {
+         "Value": "[OptionYCPoint1]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "OptionYCPoint2": {
+         "Value": "[OptionYCPoint2]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 43,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 44,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 45,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "SinkBond": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParRateSink": {
+         "Value": "[ParRate]",
+         "Index": 20,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "TaxableIntPer": {
+         "Value": "[TaxableIntPct]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 24,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallPremPer": {
+         "Value": "[FirstCallPremPer]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[PaymentDate]",
+         "Index": 26,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 37,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "CommercialMtg": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AmortStartDate": {
+         "Value": "[AmortStartDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AmortTerm": {
+         "Value": "[AmortTerm]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MtgWAC1": {
+         "Value": "[ParRate]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 25,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallPrem%": {
+         "Value": "[FirstCallPremPer]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[ParCallDate]",
+         "Index": 27,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 38,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "ArCommercialMtg": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AmortStartDate": {
+         "Value": "[AmortStartDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AmortTerm": {
+         "Value": "[AmortTerm]",
+         "Index": 20,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ArmWAC": {
+         "Value": "[ParRate]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParRateARM": {
+         "Value": "[ParRate]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjCap": {
+         "Value": "[AdjCap]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjFloor": {
+         "Value": "[AdjFloor]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjIndex": {
+         "Value": "[LoanResetMat]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjPer1": {
+         "Value": "[LoanResetTerm]",
+         "Index": 28,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjSpread": {
+         "Value": "[a_spd_rec_rt]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 40,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 44,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "Mortgage": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MtgWAC": {
+         "Value": "[MtgWAC]",
+         "Index": 20,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParRate": {
+         "Value": "[ParRate]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "Term": {
+         "Value": "[Term]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookPSA": {
+         "Value": "[BookPSA]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AgencyTypeOpt": {
+         "Value": "[AgencyTypeOpt]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CFTypeOpt": {
+         "Value": "[CFTypeOpt]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 38,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "ArMortgage": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AcqDate": {
+         "Value": "[IssueDate]",
+         "Index": 17,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AmortStartDate": {
+         "Value": "[AmortStartDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParRateARM": {
+         "Value": "[ParRateARM]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ArmWAC": {
+         "Value": "[ARMWAC]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjIndex": {
+         "Value": "[AdjIndex]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjPer": {
+         "Value": "[AdjPer]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjCap": {
+         "Value": "[ADJCAP]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstPerCap": {
+         "Value": "[c_mtg_frst_rst_cap_up_txt]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PosDelLim": {
+         "Value": "[c_mtg_prd_rt_cap_amt]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstResetDate": {
+         "Value": "[FirstResetDate]",
+         "Index": 30,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjDate": {
+         "Value": "[NextResetDate]",
+         "Index": 31,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjFloor": {
+         "Value": "[ADJFLOOR]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AdjSpread": {
+         "Value": "[AdjSpread]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MtgServiceFee": {
+         "Value": "[SvcFee]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "Term": {
+         "Value": "[Term]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "yieldinp": {
+         "Value": "[nom_yld_rt]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AgencyTypeOpt": {
+         "Value": "[AgencyTypeOpt]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 44,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 45,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 47,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 48,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 49,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ADCOIssuerName": {
+         "Value": "[ADCOISSUERNAME]",
+         "Index": 50,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ADCOARMIndex": {
+         "Value": "[ADCOARMINDEX]",
+         "Index": 51,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ADCOFirstResetAge": {
+         "Value": "[ADCOFIRSTRESET]",
+         "Index": 52,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "WACatOriginationInit": {
+         "Value": "[MTG_ORIG_WAC]",
+         "Index": 53,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 54,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 55,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "CredDefSwap": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CDSResetDate": {
+         "Value": "[CDS_Reset_Dt]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParRate": {
+         "Value": "[ParRate]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CDSResetRate": {
+         "Value": "[CDS_Reset_Rt]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[PaymentFreq]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "[ProtectionOpt]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 35,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "FloatIO": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[ParVal]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "0.01",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFixedRate": {
+         "Value": "0",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMat": {
+         "Value": "[LoanResetMat]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateAdd": {
+         "Value": "[a_spd_rec_rt]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatResetFreq": {
+         "Value": "[a_int_mode_rec_nmbr]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFloatRateInp": {
+         "Value": "[ParRate]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtTime": {
+         "Value": "[PaymentTime]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PayerType": {
+         "Value": "Fixed",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 31,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[PaymentDate]",
+         "Index": 32,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMult": {
+         "Value": "1",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 43,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 44,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 45,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "Swap": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[a_ntnal_amt]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StartDt": {
+         "Value": "[a_start_dt]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 21,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFixedRate": {
+         "Value": "[InitFixedRate]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMat": {
+         "Value": "[FloatRateMat]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateAdd": {
+         "Value": "[FloatRateAdd]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[FixedPymtFreq]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtFreq": {
+         "Value": "[FloatPymtFreq]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatResetFreq": {
+         "Value": "[FloatResetFreq]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFloatRateInp": {
+         "Value": "[InitFloatRateInp]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtTime": {
+         "Value": "[PaymentTime]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PayerType": {
+         "Value": "[PayerType]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 32,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 33,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMult": {
+         "Value": "[FloatRateMult]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 44,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LastCallDate": {
+         "Value": "[PaymentDate]",
+         "Index": 45,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "Seller",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 48,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 49,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 50,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "Swaption": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[a_ntnal_amt]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[bookval]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[mv_amt]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFixedRate": {
+         "Value": "[InitFixedRate]",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMat": {
+         "Value": "[FloatRateMat]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateAdd": {
+         "Value": "[FloatRateAdd]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[FixedPymtFreq]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtFreq": {
+         "Value": "[FloatPymtFreq]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatResetFreq": {
+         "Value": "[FloatResetFreq]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFloatRateInp": {
+         "Value": "[InitFloatRateInp]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtTime": {
+         "Value": "[PaymentTime]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PayerType": {
+         "Value": "[PayerType]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 31,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMult": {
+         "Value": "[FloatRateMult]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 42,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "Buyer",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstExerciseDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 44,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LastExerciseDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 45,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StrikeRate": {
+         "Value": "[InitFixedRate]",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 48,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 49,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 50,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "CapFloor": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[a_ntnal_amt]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "OptionPremium": {
+         "Value": "0",
+         "Index": 18,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "AcqDate": {
+         "Value": "[IssueDate]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "4",
+         "Index": 21,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StrikeRate": {
+         "Value": "[StrikeRate]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IndexRateMat": {
+         "Value": "[IndexRateMat]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IndexRateAdd": {
+         "Value": "0",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IndexRateMult": {
+         "Value": "1",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IndexResetFreq": {
+         "Value": "[IndexResetFreq]",
+         "Index": 27,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "OptionType": {
+         "Value": "[OptionType]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "[ProtectionOpt]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstExerciseDate": {
+         "Value": "[a_start_dt]",
+         "Index": 30,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LastExerciseDate": {
+         "Value": "[PaymentDate]",
+         "Index": 31,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 32,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 33,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 41,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 44,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 45,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "PrepayFees": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[a_ntnal_amt]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StartDt": {
+         "Value": "[a_start_dt]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 21,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFixedRate": {
+         "Value": "[InitFixedRate]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMat": {
+         "Value": "[FloatRateMat]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateAdd": {
+         "Value": "[FloatRateAdd]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[FixedPymtFreq]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtFreq": {
+         "Value": "[FloatPymtFreq]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatResetFreq": {
+         "Value": "[FloatResetFreq]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFloatRateInp": {
+         "Value": "[InitFloatRateInp]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtTime": {
+         "Value": "[PaymentTime]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PayerType": {
+         "Value": "[PayerType]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 32,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 33,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMult": {
+         "Value": "[FloatRateMult]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 44,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LastCallDate": {
+         "Value": "[PaymentDate]",
+         "Index": 45,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "Seller",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 48,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "YES",
+         "Index": 49,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 50,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "119Hedge_Swap": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[a_ntnal_amt]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StartDt": {
+         "Value": "[a_start_dt]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 21,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFixedRate": {
+         "Value": "[InitFixedRate]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMat": {
+         "Value": "[FloatRateMat]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateAdd": {
+         "Value": "[FloatRateAdd]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[FixedPymtFreq]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtFreq": {
+         "Value": "[FloatPymtFreq]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatResetFreq": {
+         "Value": "[FloatResetFreq]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFloatRateInp": {
+         "Value": "[InitFloatRateInp]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtTime": {
+         "Value": "[PaymentTime]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PayerType": {
+         "Value": "[PayerType]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 32,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 33,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMult": {
+         "Value": "[FloatRateMult]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 44,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LastCallDate": {
+         "Value": "[PaymentDate]",
+         "Index": 45,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "Seller",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 48,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 49,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 50,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "Liab_Swap_NonCall": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[a_ntnal_amt]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StartDt": {
+         "Value": "[a_start_dt]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 21,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFixedRate": {
+         "Value": "[InitFixedRate]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMat": {
+         "Value": "[FloatRateMat]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateAdd": {
+         "Value": "[FloatRateAdd]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[FixedPymtFreq]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtFreq": {
+         "Value": "[FloatPymtFreq]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatResetFreq": {
+         "Value": "[FloatResetFreq]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFloatRateInp": {
+         "Value": "[InitFloatRateInp]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtTime": {
+         "Value": "[PaymentTime]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PayerType": {
+         "Value": "[PayerType]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 32,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 33,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMult": {
+         "Value": "[FloatRateMult]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 44,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LastCallDate": {
+         "Value": "[PaymentDate]",
+         "Index": 45,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "Seller",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 48,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 49,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 50,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   },
+   "Liab_Swap_Call": {
+      "ck.Cusip": {
+         "Value": "[a_cusip_cd]",
+         "Index": 0,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.YrsToMat": {
+         "Value": "[YTM]",
+         "Index": 1,
+         "Format": "ZeroPad(3)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AssetGroup": {
+         "Value": "[AssetGroup]",
+         "Index": 2,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.AVRCat": {
+         "Value": "[AVR]",
+         "Index": 3,
+         "Format": "ZeroPad(2)",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.QualRating": {
+         "Value": "[a_naic_wt_nmbr]",
+         "Index": 4,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.NAICSVO": {
+         "Value": "[numeric_rtg]",
+         "Index": 5,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.GAAPCat": {
+         "Value": "_",
+         "Index": 6,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char2": {
+         "Value": "[int_rtg_char]",
+         "Index": 7,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char3": {
+         "Value": "[fpc_rtg_char]",
+         "Index": 8,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char4": {
+         "Value": "[mw_char]",
+         "Index": 9,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char5": {
+         "Value": "[sp_credit_cd]",
+         "Index": 10,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char6": {
+         "Value": "[sp_intrt_cd]",
+         "Index": 11,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char7": {
+         "Value": "_",
+         "Index": 12,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ck.Char8": {
+         "Value": "_",
+         "Index": 13,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "NotionalAmt": {
+         "Value": "[a_ntnal_amt]",
+         "Index": 14,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParVal": {
+         "Value": "[SwapParVal]",
+         "Index": 15,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookValInit": {
+         "Value": "[BookVal]",
+         "Index": 16,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MarketValInit": {
+         "Value": "[MarketVal]",
+         "Index": 17,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "IssueDate": {
+         "Value": "[IssueDate]",
+         "Index": 18,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StartDt": {
+         "Value": "[a_start_dt]",
+         "Index": 19,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentDate": {
+         "Value": "[PaymentDate]",
+         "Index": 20,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "BookMatDate": {
+         "Value": "[BookMatDate]",
+         "Index": 21,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFixedRate": {
+         "Value": "[InitFixedRate]",
+         "Index": 22,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMat": {
+         "Value": "[FloatRateMat]",
+         "Index": 23,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateAdd": {
+         "Value": "[FloatRateAdd]",
+         "Index": 24,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentFreq": {
+         "Value": "[FixedPymtFreq]",
+         "Index": 25,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtFreq": {
+         "Value": "[FloatPymtFreq]",
+         "Index": 26,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatResetFreq": {
+         "Value": "[FloatResetFreq]",
+         "Index": 27,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InitFloatRateInp": {
+         "Value": "[InitFloatRateInp]",
+         "Index": 28,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PaymentTime": {
+         "Value": "[PaymentTime]",
+         "Index": 29,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatPymtTime": {
+         "Value": "[PaymentTime]",
+         "Index": 30,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "PayerType": {
+         "Value": "[PayerType]",
+         "Index": 31,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FirstCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 32,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ParCallDate": {
+         "Value": "[FirstCallDate]",
+         "Index": 33,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "SalePriority": {
+         "Value": "[SalePriority]",
+         "Index": 34,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GAAPSFAS115Type": {
+         "Value": "[GAAPSFAS115Type]",
+         "Index": 35,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LiquidityRank": {
+         "Value": "[LiquidityRank]",
+         "Index": 36,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "InvExpPer": {
+         "Value": "[InvExpPer]",
+         "Index": 37,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatRateMult": {
+         "Value": "[FloatRateMult]",
+         "Index": 38,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1SubFlg": {
+         "Value": "[FPCSub_Flag]",
+         "Index": 39,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "StatClass": {
+         "Value": "[StatClass]",
+         "Index": 40,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FPCC1BVFlg": {
+         "Value": "[FPCBV_Flag]",
+         "Index": 41,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "CallModelFlg": {
+         "Value": "[CallModel_Flag]",
+         "Index": 42,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "MuniFlg": {
+         "Value": "[Muni_Flag]",
+         "Index": 43,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "FloatFlg": {
+         "Value": "[Float_Flag]",
+         "Index": 44,
+         "Format": "Integer",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "LastCallDate": {
+         "Value": "[PaymentDate]",
+         "Index": 45,
+         "Format": "Date",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ProtectionOpt": {
+         "Value": "Seller",
+         "Index": 46,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "GroupID": {
+         "Value": "[AssetGroup]",
+         "Index": 47,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "obvACallSpreadInp": {
+         "Value": "[OAS]",
+         "Index": 48,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "C1Flg": {
+         "Value": "[C1_flg]",
+         "Index": 49,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      },
+      "ScalarFlg": {
+         "Value": "[Scalar]",
+         "Index": 50,
+         "Format": "None",
+         "Source": "TODO",
+         "Description": "None",
+         "Notes": "None",
+         "Needed": "TODO"
+      }
+   }
+}
