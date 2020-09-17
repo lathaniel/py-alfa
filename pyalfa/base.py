@@ -131,6 +131,23 @@ class Model:
     '''Name of the model, without the \*.ain2 extension'''
     return self._get_modelName()
   
+  @name.setter
+  def name(self, val):
+    '''Change the name of the model.
+
+    This does not actually change the name of the ALFA model file, but rather changes the model to which the Model instance points
+
+    '''
+    if isinstance(val, str):
+      # Make sure file exists
+      if os.path.exists(os.path.join(self.dir, val.lower().replace('.ain2', ''))):
+        # Replace the file part of __model_file with provided val
+        self.__model_file = self.__model_file.replace(self.name, val)
+      else:
+        raise
+    else:
+      raise ValueError('Must provide a string.')
+
   @ property
   def filename(self):
     '''Name of the model file, with the \*.ain2 extension'''
@@ -259,12 +276,10 @@ class Run(Model): # We want to pass some model methods
   '''An ALFA run
   
   Attributes:
-    output
-    id
     **kwargs (from metadata XML)  
   
   TODO:
-    Add '_' prefix to *kwargs, maybe...
+    Add '_' prefix to \*kwargs, maybe...
       OR: have an attribute called 'meta' that contains all that info. Yeah I like that better...
   '''
 
