@@ -22,6 +22,11 @@ def create_dummy_model_folder(model_dir):
   open(os.path.join(model_dir, 'AssetInput02.aia2'), 'a').close()
   open(os.path.join(model_dir, 'LiabInput01.ail2'), 'a').close()
   open(os.path.join(model_dir, 'LiabInput02.ail2'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.001.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.110.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.02.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.12.Metadata.xml'), 'a').close()
+  open(os.path.join(model_dir, 'TestModel.Run.054.Metadata.xml'), 'a').close()
 
   # Create AIA definitions in model directory
   with open(os.path.join(model_dir, 'AIA_Definitions.JSON'), 'w') as f:
@@ -426,70 +431,75 @@ def clear_dummy_model_folder(model_dir):
 class Test_Model_Init(unittest.TestCase):
   
   def test_init_NotAModel(self):
-    with self.assertRaises(ValueError):
-      result = Model('FAKE_MODEL_DIR/AssetInput01.aia2')
+      with self.assertRaises(ValueError):
+         result = Model('FAKE_MODEL_DIR/AssetInput01.aia2')
   
   def test_init_ProvidedFolderWithModel(self):
-    result = result = Model('FAKE_MODEL_DIR')
-    self.assertIsInstance(result, Model)
+      result = result = Model('FAKE_MODEL_DIR')
+      self.assertIsInstance(result, Model)
   
   def test_init_ProvidedFolderWithoutModel(self):
-    with self.assertRaises(FileNotFoundError):
-      result = Model('FAKE_MODEL_DIR/TheresNoModelHere')
+      with self.assertRaises(FileNotFoundError):
+         result = Model('FAKE_MODEL_DIR/TheresNoModelHere')
   
   def test_init_ProvidedFolderWithMultipleModels(self):
-    with self.assertRaises(ValueError):
-      result = Model('FAKE_MODEL_DIR/ThereAreTwoModelsHere')
+      with self.assertRaises(ValueError):
+         result = Model('FAKE_MODEL_DIR/ThereAreTwoModelsHere')
 
   def test_init_fine(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertIsInstance(m, Model)
+      m = Model('FAKE_MODEL_DIR/TestModel.ain2')
+      self.assertIsInstance(m, Model)
 
   def test_init_path_not_exists(self):    
-    with self.assertRaises(FileNotFoundError):
-      result = Model('NOTADIRECTORY')
+      with self.assertRaises(FileNotFoundError):
+         result = Model('NOTADIRECTORY')
 
   def test_init_no_model_in_path(self):
-    pass
+      pass
 
   def test_init_mult_model_in_path(self):
-    pass    
-
+      pass    
+    
 class Test_Model_Attrs(unittest.TestCase):
+
+  def __init__(self, *args, **kwargs):
+    super(Test_Model_Attrs, self).__init__(*args, **kwargs)
+    self.m = Model('FAKE_MODEL_DIR/TestModel.ain2')
   
   def test_model_name(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(m.name, 'TestModel', 'This should be the model name without an extension')    
+    result = self.m.name    
+    self.assertEqual(result, 'TestModel', 'This should be the model name without an extension')    
   
   def test_model_file(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(m.filename, 'TestModel.ain2', 'This should be the model name with an extension')    
+    result = self.m.filename
+    self.assertEqual(result, 'TestModel.ain2', 'This should be the model name with an extension')    
   
   def test_model_dir(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(m.dir, 'FAKE_MODEL_DIR', 'This should be the path to the model')
+    result = self.m.dir
+    self.assertEqual(result, 'FAKE_MODEL_DIR', 'This should be the path to the model')
   
   def test_model_locked(self):
-    m = Model('FAKE_MODEL_DIR/TestModel.ain2')
     # Create a lock file, which occurs when a model is open in ALFA
-    open(os.path.join(m.dir, 'TestModel.ain2.lock'), 'a').close()
-    self.assertTrue(m.locked)
+    open(os.path.join(self.m.dir, 'TestModel.ain2.lock'), 'a').close()
+    self.assertTrue(self.m.locked)
 
-    os.remove(os.path.join(m.dir, 'TestModel.ain2.lock'))
-    self.assertFalse(m.locked)  
+    os.remove(os.path.join(self.m.dir, 'TestModel.ain2.lock'))
+    self.assertFalse(self.m.locked)  
 
   def test_table_files_fine(self):
-    result = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    self.assertEqual(result.tables, ['TableFile01.xlsx.atB2X'])
+    result = self.m.tables
+    self.assertEqual(result, ['TableFile01.xlsx.atB2X'])
   
   def test_table_files_empty(self):
-    result = Model('FAKE_MODEL_DIR/TestModel.ain2')
-    os.remove(os.path.join(result.dir, 'TableFile01.xlsx.atB2X'))
-    self.assertEqual(result.tables, [])
-    open(os.path.join(result.dir, 'TableFile01.xlsx.atB2X'), 'a').close()
+    os.remove(os.path.join(self.m.dir, 'TableFile01.xlsx.atB2X'))
+    result = self.m.tables
+    self.assertEqual(result, [])
+    open(os.path.join(self.m.dir, 'TableFile01.xlsx.atB2X'), 'a').close()
 
-  def test_model_output(self):
-    pass
+  def test_model_runs(self):
+    result = self.m.runs
+    result.sort()
+    self.assertEqual(result, ['001', '02', '054','110','12'])
 
 class Test_AIA_init(unittest.TestCase):
   def test_AIA_fine(self):
@@ -539,8 +549,33 @@ class Test_AIA_attrs(unittest.TestCase):
 class Test_AIL_init(unittest.TestCase):
   pass
 
-class Test_Output_init(unittest.TestCase):
-  pass
+class Test_Run_init(unittest.TestCase):
+  
+   def __init__(self, *args, **kwargs):
+      super(Test_Run_init, self).__init__(*args, **kwargs)
+      self.m = Model('FAKE_MODEL_DIR/TestModel.ain2')
+   
+   def test_run_fine(self):
+      pass
+
+   def test_run_no_output(self):
+      pass
+
+   def test_run_invalid(self):
+      pass
+
+   def test_run_with_output(self):
+      pass
+
+   def test_run_projID_not_in_kwargs(self):
+      pass
+
+   def test_run_name_not_in_kwargs(self):
+      pass
+
+   def test_run_dir_not_in_kwargs(self):
+      pass
+
 
 if __name__=="__main__":
   create_dummy_model_folder(model_dir='FAKE_MODEL_DIR')
