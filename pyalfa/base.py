@@ -144,7 +144,7 @@ class Model:
     '''
     return self._isLocked()
 
-class AIA:
+class Asset:
   '''Instance of ALFA Input Asset. These are basically just text files
 
   Attributes:
@@ -252,7 +252,7 @@ class AIA:
       subset.to_csv(outfile, sep = '\t', index = False, header=False)      
     
 
-class AIL:
+class Liability:
   pass
 
 class Run(Model): # We want to pass some model methods
