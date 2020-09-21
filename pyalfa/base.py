@@ -44,6 +44,7 @@ class Model:
     else:
       raise FileNotFoundError("Could not initialize model at '%s'\nMake sure you entered the path correctly and that it can be accessed by you."%full_path_to_model_file)
     
+    self.__excluded = []
     # Give the model a valuation date, even though it won't really be useful in practice
   
   def _get_tableFiles(self):
@@ -73,6 +74,22 @@ class Model:
     files = glob.glob(os.path.join(self.dir, '%s.Run.*.Meta*'% self.name))
     return [re.search('Run\.(\d+)\.', f)[1] for f in files]
   
+  def exclude(self, v):
+    '''Method to exclude specific assets from the model
+
+    Returns:
+      None
+    '''
+    # See what was provided
+    if isinstance(v, (str, int)):
+      v = [v]
+    elif not isinstance(v,(list,tuple)):
+      raise ValueError ('Cannot provide an argument of type %s'%type(v))
+    
+    # Add provided value(s) to excluded assets
+    self.__excluded.extend(v)
+
+
   def run(self, r):
     '''Get specific information for a run, as a run instance
     Args:
@@ -176,6 +193,19 @@ class Model:
       True if someone is using the model in ALFA, otherwise False
     '''
     return self._isLocked()
+  
+  @property
+  def excluded(self):
+    '''Which assets should be excluded from the model
+    
+    Returns:
+      A list of asset identifiers
+    '''
+    return self.__excluded
+  
+  @excluded.setter
+  def excluded(self, v):
+    pass
 
 class Asset:
   '''Instance of ALFA Input Asset. These are basically just text files
@@ -186,7 +216,6 @@ class Asset:
   '''
   def __init__(self, name, mod = None):
     self.__name = name
-    self.__excluded = []
     self.__model = mod # Underlying model for which these AIAs are used
     self.__outfile_name = '%s_%s.aia2' %('SEGNUMBER', self.__name)
     self.__outputDest = None
@@ -208,21 +237,6 @@ class Asset:
     # Use self.name to get the aia definitions
     return list(j[self.name].keys())
   
-  def exclude(self, v):
-    '''Method to exclude specific assets from the model
-
-    Returns:
-      None
-    '''
-    # See what was provided
-    if isinstance(v, (str, int)):
-      v = [v]
-    elif not isinstance(v,(list,tuple)):
-      raise ValueError ('Cannot provide an argument of type %s'%type(v))
-    
-    # Add provided value(s) to excluded assets
-    self.__excluded.extend(v)
-
   @property
   def output_dest(self):
     return self.__outputDest
@@ -255,20 +269,7 @@ class Asset:
   @property
   def name(self):
     return self.__name
-  
-  @property
-  def excluded(self):
-    '''Which assets should be excluded from the model
     
-    Returns:
-      A list of asset identifiers
-    '''
-    return self.__excluded
-  
-  @excluded.setter
-  def excluded(self, v):
-    pass
-  
   @ property
   def fields(self):
     '''

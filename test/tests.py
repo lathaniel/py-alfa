@@ -107,6 +107,9 @@ class Test_Model_Attrs(unittest.TestCase):
 
   def test_model_nickname(self):
     pass
+  
+  def test_exclude_assets(self):
+    pass
 
 class Test_AIA_init(unittest.TestCase):
   def test_AIA_fine(self):
@@ -131,9 +134,6 @@ class Test_AIA_attrs(unittest.TestCase):
   def test_aia_fields(self):
     result = Asset('Bond', Model('FAKE_MODEL_DIR/TestModel.ain2'))
     self.assertIsInstance(result.fields, list)
-
-  def test_exclude_assets(self):
-    pass
 
   def test_build_segs_param(self):
     # str provided
